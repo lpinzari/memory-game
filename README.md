@@ -29,11 +29,11 @@ The game ends once all cards have been correctly matched.
 ### Game Screenshots
 **Fig 1. Correct match**
 
-![alt memory](/img/memory_game_1.gif)
+![alt memory](/img/memory_game_1.GIF)
 
 **Fig 2. Winning game**
 
-![alt modal](/img/modal_popup.gif)
+![alt modal](/img/modal_popup.GIF)
 
 
 
