@@ -1,0 +1,346 @@
+/* *****************************************************
+ * Default values for the elements' margin and padding *
+ *******************************************************/
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    height: 7rem;
+    margin-top: 0px;
+}
+
+
+.header-title h1 {
+    font-family: Kalam;
+    font-size: 5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    text-shadow: 6px 6px 4px rgba(46, 61, 73, 0.5);
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+
+
+.deck {
+    width: 600px;
+    min-height: 480px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 22px;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    margin-bottom: 5px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border: ridge;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    border: solid;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    border: solid;
+    color: yellow;
+    font-size: 33px;
+}
+
+
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    font-size: 20px;
+    width: 380px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .timer {
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.score-panel .timer .time {
+    margin-left: 4px;
+}
+
+.score-panel .restart {
+    float:right;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+
+
+#modal, #result {
+    display: none;
+}
+
+#modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 10;
+}
+
+#result {
+	z-index: 10;
+	position: fixed;
+	width: 500px;
+	height: auto;
+}
+
+#pop-Body {
+	background-color: white;
+	/*height: 250px;*/
+    height: 320px;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+    border-color: yellow;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+}
+
+#pop-img {
+	position: relative;
+	width: 100px;
+	height: 90px;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+	margin: 10px auto;
+	top: 0;
+}
+
+.fa-smile-o {
+    position:relative;
+}
+.fa-smile-o:before {
+  content: "\f111";
+  color: #f1c40f;
+}
+.fa-smile-o:after {
+    left: 0;
+    position: absolute;
+    content: "\f118";
+}
+
+
+
+#h1Res {
+	margin: 0px 12px 12px 12px;
+	font-family: cursive;
+	text-align: center;
+	color: #4d0000;
+}
+
+#pRes {
+	color: #4d0000;
+	text-align: center;
+	font-size: 20px;
+}
+
+#pop-Ok {
+	height: 100px;
+	background-color: #cf4a53;
+	padding: 25px;
+	border-style: solid;
+	border-width: 0px 2px 2px 2px;
+    border-color: yellow;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+#ok-Button {
+	height: 50px;
+    display:inline-block;
+}
+
+#ok-Button button, #no-Button button {
+	height: 50px;
+	width: 100px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #4d0000;
+	color: white;
+	box-shadow: 0px 2px 2px 0.5px rgba(0,0,0,0.5);
+	border-style: solid;
+    border-color: yellow;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	cursor: pointer;
+	border-radius: 5px;
+	outline: none;
+}
+
+
+#no-Button button {
+    float:right;
+}
+
+
+
+/******************************************
+*        RESPONSIVE OPTIMIZATION          *
+*******************************************/
+
+
+/*Extra small devices (portrait phones, less than 5756px)*/
+
+
+@media only screen and (max-width: 575.98px) {
+
+    header {
+        height: 4rem;
+        margin: 0px;
+    }
+
+    .header-title h1 {
+        font-size: 2.75rem;
+    }
+
+    .score-panel {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .deck {
+        width: 90vw;
+        padding: 16px;
+    }
+
+    .deck .card {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #result {
+        width: 80vw;
+    }
+
+    #h1Res {
+        font-size: 1.95rem;
+    }
+
+    #pres {
+        font-size: 1.95rem;
+    }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+
+@media only screen and (min-width: 575.98px) and (max-width: 767.98px) {
+
+    header {
+        height: 6rem;
+        margin: 0px;
+    }
+
+    .header-title h1 {
+        font-size: 4rem;
+    }
+
+    .score-panel {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .deck {
+        width: 90vw;
+        padding: 16px;
+    }
+
+    .deck .card {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #result {
+        width: 80vw;
+    }
+}
