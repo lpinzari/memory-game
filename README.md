@@ -11,7 +11,7 @@ Memory Game is a complete browser-based card matching game to test a user's memo
 * [Technologies Used](#technologies-used)
 * [Dependencies](#dependencies)
 * [Acknowledgement](#acknowledgement)
-* [Future Work](#future-work)
+* [Future features](#future-features)
 
 ### Game Rules
 The game board consists of sixteen "cards" arranged in a grid. The deck is made up of eight different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!
@@ -101,12 +101,18 @@ The application consists of the following files:
 305: function checkCards(){ ... };
 ```
 
+### How to Run and Play the Game
+- **Run: **Open the [Live Preview](https://lpinzari.github.io/memory-game/). If you want to run the game *locally*, <code>Download</code> the *Project Zip* file and open the <code>index.html</code> in the unzipped folder.
+
+- **Play: ** It is a *mouse* / *track pad* game only. Left-click to flip the cards. 
+
+
 ### Credits
 - For shuffling the cards  the *shuffle(array)* Javascript function was used from [http://stackoverflow.com/a/2450976](http://stackoverflow.com/a/2450976)
 - For converting seconds into the format 00:00 (minutes:seconds) the *timeToDisplay(secs)* Javascript function was used from [https://stackoverflow.com/questions/19700283/how-to-convert-time-milliseconds-to-hours-min-sec-format-in-javascript](https://stackoverflow.com/questions/19700283/how-to-convert-time-milliseconds-to-hours-min-sec-format-in-javascript)
 
 ### Technologies Used
-- **HTML5** | **CSS3** | **JS (ES6)**
+- **HTML** | **CSS** | **JS**
 
 ### Dependencies
 - [Fontawsome 4.6.1](https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css) to display the card's symbol.
@@ -115,11 +121,9 @@ The application consists of the following files:
 ### Acknowledgement
 I'd like to thank the Udacity's mentors and instructors for the useful advices.
 
-### Future Work
+### Future features
 - Add CSS animations when cards are clicked, unsuccessfully matched, and successfully matched.
 - Add keyboard shortcuts for gameplay.
-- Create the list of symbols in the app.js file.
-- Deploy the application to a cloud.
 
 #### Author
 Ludovico Pinzari
