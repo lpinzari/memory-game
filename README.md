@@ -7,6 +7,7 @@ Memory Game is a complete browser-based card matching game to test a user's memo
 * [Game Screenshots](#game-Screenshots)
 * [Game Functional Requirements](#game-functional-requirements)
 * [Game Design](#game-design)
+* [How to Run and Play the Game](#how-to-run-and-play-the-game)
 * [Credits](#credits)
 * [Technologies Used](#technologies-used)
 * [Dependencies](#dependencies)
@@ -104,7 +105,7 @@ The application consists of the following files:
 ### How to Run and Play the Game
 - **Run: **Open the [Live Preview](https://lpinzari.github.io/memory-game/). If you want to run the game *locally*, <code>Download</code> the *Project Zip* file and open the <code>index.html</code> in the unzipped folder.
 
-- **Play: ** It is a *mouse* / *track pad* game only. Left-click to flip the cards. 
+- **Play: ** It is a *mouse* / *track pad* game only. Left-click to flip the cards.
 
 
 ### Credits
