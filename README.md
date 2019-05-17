@@ -65,47 +65,16 @@ The application consists of the following files:
 ```
 430: document.body.onload = startGame();
 ```
-    1. To shuffle and create the deck of cards:
-```
-113: function resetDeck(){ ... }
-```
-    2. To update and display the counter:
-```
-240: function incrementMoves(){ ... };
-```
-    To start and update the timer, I implemented a recursive function:
-```
-406: function startTimer(){ ... };
-```
-    3. To update and display the star rating:
-```
-250: function updateRating(){ ... };
-365: function displayRating(){ ... };
-```
-    4. To create a restart button:
-```
-50: let restart = document.querySelector('.restart');
-462: restart.addEventListener('click',restartGame());
-```
-    5. To enable the pop-up modal and display the results:
-```
-336: function checkGame(){ ... };
-348: function displayResult() { ... };
-```
-    6. To handle user click interactions to flip the cards. This functionality is the core of the application. Rather than adding an event listener to each individual card (which can be a costly operation in the JS event loop mechanism), I attached an event listener to the parent element (deck class).
-```
-459: deck.addEventListener('click',flipCard);
-479: function flipCard(event){ ... };
-```
-    7. To control the matching logic:
-```
-305: function checkCards(){ ... };
-```
+
 
 ### How to Run and Play the Game
-- **Run: **Open the [Live Preview](https://lpinzari.github.io/memory-game/). If you want to run the game *locally*, <code>Download</code> the *Project Zip* file and open the <code>index.html</code> in the unzipped folder.
+- **Run:** Click [Here](https://lpinzari.github.io/memory-game/) to play the LivePreview of the Game hosted on GitHub. If you want to run the game *locally* on your computer,you can download the files from this repository or clone them.
+    - **Download**: Click the <code>Clone or download</code> green button and you'll get the *Project Zip* file. When your download finishes, unzip the file and open the <code>index.html</code> on your browser.
+    - **Clone**: type into your terminal the following <code> $ git clone https://github.com/lpinzari/memory-game.git</code>. When it finishes cloning, open the <code>index.html</code> file on your browser.
 
-- **Play: ** It is a *mouse* / *track pad* game only. Left-click to flip the cards.
+- **Play:** The application is usable on desktop and tablet touch screen and mobile browsers.
+    - *Desktop*: To flip the cards use the left button of your mouse or trackpad.
+    - *tablet/mobile*: To flip the cards just touch the secreen over the selected card.
 
 
 ### Credits
